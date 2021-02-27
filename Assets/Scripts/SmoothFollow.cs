@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class SmoothFollow : MonoBehaviour
 {
@@ -44,13 +46,12 @@ public class SmoothFollow : MonoBehaviour
         
         transform.position = new Vector3(
             transform.position.x,
-            transform.position.y,
+            currentHeight,
             transform.position.z);
         
         transform.rotation = Quaternion.Lerp(
             transform.rotation,
             target.rotation,
             rotationDamping * Time.deltaTime);
-
     }
 }
