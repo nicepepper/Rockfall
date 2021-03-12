@@ -37,6 +37,12 @@ public class ShipWeapons : MonoBehaviour
             firePointToUse.position,
             firePointToUse.rotation);
 
+        var audio = firePointToUse.GetComponent<AudioSource>();
+        if (audio)
+        {
+            audio.Play();
+        }
+
         _firePointIndex++;
         if (_firePointIndex >= firePoints.Length)
         {

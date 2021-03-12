@@ -1040,8 +1040,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7615a6df5a4fee49b49a8445c184a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warningRadius: 100
-  destroyRadius: 150
+  warningRadius: 300
+  destroyRadius: 350
 --- !u!4 &1161420562
 Transform:
   m_ObjectHideFlags: 0
