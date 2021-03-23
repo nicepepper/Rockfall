@@ -107,10 +107,22 @@ public class GameManager : Singleton<GameManager>
         if (paused)
         {
             Time.timeScale = 0.0f;
+            
+            var audio = currentShip.GetComponent<AudioSource>();
+            if (audio)
+            {
+                audio.Pause();
+            }
         }
         else
         {
             Time.timeScale = 1.0f;
+            
+            var audio = currentShip.GetComponent<AudioSource>();
+            if (audio)
+            {
+                audio.Play();
+            }
         }
     }
 

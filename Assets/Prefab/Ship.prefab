@@ -5339,7 +5339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca965b02737f3db418f51554d62468d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnRate: 6
+  turnRate: 2
   levelDamping: 1
 --- !u!114 &7751775747460496922
 MonoBehaviour:

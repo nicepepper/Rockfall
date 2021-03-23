@@ -26,9 +26,6 @@ public class ShipSteering : MonoBehaviour
         levelAngles.z = 0.0f;
         var levelOrientation = Quaternion.Euler(levelAngles);
         
-        transform.rotation = Quaternion.Slerp(
-            transform.rotation,
-            levelOrientation,
-            levelDamping * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, levelOrientation, levelDamping * Time.deltaTime);
     }
 }
